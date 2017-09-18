@@ -1,35 +1,63 @@
-general_assembly_logo.png
+<img src = "general_assembly_logo.png">
 
-General Assembly Account Creation
+<h1>General Assembly Account Creation </h1>
 
-Welcome to the General Assembly. General Assembly is a global
+<p>Welcome to the General Assembly. General Assembly is a global
 institution training people all over the world in today's top
-technologies.
+technologies.</p>
 
-Please fill out the information below to create your General Assembly
+<p>Please fill out the information below to create your General Assembly
 account. Let us know what city you're in and what course
 you're taking. This list is for all students. Please tell us what
 city you're in and whether you're taking the Immersive User Experience (UX)
-course or the Immersive Web Development course. 
+course or the Immersive Web Development course.</p>
 
-City:
-  Hong Kong
-  London
-  Los Angeles
-  New York
-  Portland
-  San Francisco
-  Seattle
-  Singapore
+<h2>City:</h2>
+<form>
+<select name="select-box">
+  <option value="London">London</option>
+  <option value="Hong Kong">Hong Kong</option>
+  <option value="Los Angeles">Los Angeles</option>
+  <option value="New York">New York</option>
+  <option value="Portland">Portland</option>
+  <option value="San Francisco">San Francisco</option>
+  <option value="Seattle">Seattle</option>
+  <option value="Singapore">Singapore</option>
+</select>
 
-Course:
-  (0) UX
-  ( ) Web Dev
 
-Name:     _________
-Email:    _________
-Password: *********
-
-[] Yes, subscribe me to the General Assembly student newsletter
-
-[Subscribe]
+<h2>Course:</h2>
+<form>
+<label>
+    <input type="radio" name="programe" value="UX">
+    UX
+  </label>
+  <label>
+      <input type="radio" name="programe" value="Web Dev">
+      Web Dev
+    </label>
+<br />
+<br />
+  <form action="#" method="GET">
+  <label for="name-field">Name</label>
+  <input id="name-field" name="nameField" type="text" value="">
+<br />
+<br />
+    <form action="#" method="GET">
+  <label for="name-field">Email</label>
+  <input type="email" placeholder="email" required>
+<br />
+<br />
+<form action="#" method="GET">
+<label for="name-field">Password</label>
+<input type="Password" placeholder="password" required>
+<br />
+<br />
+  <label>
+    <input type="checkbox" name="some-num" value="1">
+    Yes, subscribe me to the General Assembly student newsletter
+  </label>
+<br />
+<br />
+<input type="submit" value="Subscribe">
+</form>
