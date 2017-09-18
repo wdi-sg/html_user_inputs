@@ -1,35 +1,74 @@
-general_assembly_logo.png
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>gneral Assembly || Register</title>
+  </head>
+  <body>
+  <img src="general_assembly_logo.png" alt="GA Logo">
+  <h1>General Assembly Account Creation</h1>
 
-General Assembly Account Creation
+  <p>
+    Welcome to the General Assembly. General Assembly is a global
+    institution training people all over the world in today's top
+    technologies.
+  </p>
+  <p>
+    Please fill out the information below to create your General Assembly
+    account. Let us know what city you're in and what course
+    you're taking. This list is for all students. Please tell us what
+    city you're in and whether you're taking the Immersive User Experience (UX)
+    course or the Immersive Web Development course.
+  </p>
+    <form action="success.html" method="post">
+    <div class="">
+       City:
+      <label>
+        <select class="" name="city:">
+          <option value="Hong Kong">Hong Kong</option>
+          <option value="London">London</option>
+          <option value="Los Angeles">Los Angeles</option>
+          <option value="New York">New York</option>
+          <option value="San Francisco">San Francisco</option>
+          <option value="Seattle">Seattle</option>
+          <option value="Singapore">Singapore</option>
+        </select>
+      </label>
+    </div>
 
-Welcome to the General Assembly. General Assembly is a global
-institution training people all over the world in today's top
-technologies.
+    <div class="">
+        Course:
+      <label>
+        <input type ="radio" id="UX" name="course" value="UX">
+      UX
+        <input type ="radio" id="Web Dev" name="course" value="Web Dev">
+      Web Dev
+    </div>
 
-Please fill out the information below to create your General Assembly
-account. Let us know what city you're in and what course
-you're taking. This list is for all students. Please tell us what
-city you're in and whether you're taking the Immersive User Experience (UX)
-course or the Immersive Web Development course. 
+    <div class="">
+      <label>
+        Name: <input type="text" name="">
+      </label>
+      <label>
+        Email: <input type="pattern" name="">
+      </label>
+      <label>
+      Password: <input type="password" name="">
+      </label>
+    <div>
 
-City:
-  Hong Kong
-  London
-  Los Angeles
-  New York
-  Portland
-  San Francisco
-  Seattle
-  Singapore
+    <div class="">
+      <label>
+        <input type ="checkbox" name="check"> Yes, subscribe me to the General Assembly student newsletter
+      </label>
+    </div>
 
-Course:
-  (0) UX
-  ( ) Web Dev
+    <div class="">
+      <label>
+        <button type="button">Subscribe!</button>
+      </label>
+    <div>
+  </form>
 
-Name:     _________
-Email:    _________
-Password: *********
-
-[] Yes, subscribe me to the General Assembly student newsletter
-
-[Subscribe]
+  </body>
+</html>
