@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Account Creation</title>
+    <title>General Assembly | Register</title>
   </head>
   <body>
 
@@ -20,9 +20,11 @@
     city you're in and whether you're taking the Immersive User Experience (UX)
     course or the Immersive Web Development course.</p>
 
-    <form>
-      City:
-      <select name="city" form="cityform">
+    <form action="succuess.html" method="">
+    <div class="">
+    <label>
+        City:
+      <select class="" name="city">
         <option value="Singapore">Singapore</option>
         <option value="Seattle">Seattle</option>
         <option value="San Francisco">San Francisco</option>
@@ -32,26 +34,46 @@
         <option value="London">London</option>
         <option value="Hong Kong">Hong Kong</option>
       </select>
-      <br />
-      <br />
+     </label>
+   </div>
+
+    <div class="">
       Course:
-      <input type="radio" name="Course" value="ux" checked> UX
+      <label>
+        <input type="radio" name="Course" value="ux" checked> UX
+      </label>
+      <label>
       <input type="radio" name="Course" value="web-dev"> Web Dev
-      <br />
-      <br />
+      </label>
+    </div>
+
+    <div>
+      <label class="">
       Name:
       <input type="text" name="name">
-      <br /><br />
+      </label>
+
+      <label class="">
       E-mail:
       <input type="text" name="mail">
-      <br /><br />
+      </label>
+
+      <label class="">
       Password:
-      <input type="password" name="password">
-      <br /><br />
+      <input type="password" name="password" value="">
+      </label>
+    </div>
+
+    <div class="">
+      <label>
       <input type="checkbox" name="subsribe" value="newsletter"> Yes, subscribe me to the General Assembly student newsletter
-      <br /><br />
-      <input type="submit" value="Subscribe">
+      </label>
+    </div>
 
-
+    <div class="">
+      <label>
+      <button type="submit" form="nameform" value="Subscribe">Subscribe</button>
+      </label>
+    </div>
   </body>
 </html>
