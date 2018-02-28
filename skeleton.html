@@ -1,35 +1,115 @@
-general_assembly_logo.png
+<!DOCTYPE Html>
+<head>
 
-General Assembly Account Creation
+	<style>
+body{
+		margin:20px;
+	    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
 
-Welcome to the General Assembly. General Assembly is a global
-institution training people all over the world in today's top
-technologies.
+.description{
+max-width:500px;
 
-Please fill out the information below to create your General Assembly
-account. Let us know what city you're in and what course
-you're taking. This list is for all students. Please tell us what
-city you're in and whether you're taking the Immersive User Experience (UX)
-course or the Immersive Web Development course. 
+}
 
-City:
-  Hong Kong
-  London
-  Los Angeles
-  New York
-  Portland
-  San Francisco
-  Seattle
-  Singapore
+form{
+    margin:10px auto;
+    padding: 10px 12px 10px 0;
+}
 
-Course:
-  (0) UX
-  ( ) Web Dev
+label{
+    margin:0 0 3px 0;
+    padding:0px;
+    display:inline-block;
+    width:100px;
+    font-weight: bold;
+}
+input[type=text], 
+input[type=password], 
+textarea, 
+select{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    padding: 7px;
+    margin:0px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;  
+}
+input[type=text]:focus, 
+input[type=password]:focus, 
+textarea:focus, 
+select:focus{
+    -moz-box-shadow: 0 0 8px #88D5E9;
+    -webkit-box-shadow: 0 0 8px #88D5E9;
+    box-shadow: 0 0 8px #88D5E9;
+    border: 1px solid #88D5E9;
+}
 
-Name:     _________
-Email:    _________
-Password: *********
+input[type=submit], input[type=button]{
+    background: #4B99AD;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+}
+input[type=submit]:hover, input[type=button]:hover{
+    background: #4691A4;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+}
 
-[] Yes, subscribe me to the General Assembly student newsletter
+</style>
 
-[Subscribe]
+
+
+
+</head>
+<header>
+	<img class="headerimg" src = "general_assembly_logo.png">
+</header>
+<body>
+	<div>
+		<h1>General Assembly Account Creation</h1>
+
+		<div class="description"><p>Welcome to the General Assembly. General Assembly is a global
+			institution training people all over the world in today's top
+		technologies.</p>
+
+		<p>Please fill out the information below to create your General Assembly
+			account. Let us know what city you're in and what course
+			you're taking. This list is for all students. Please tell us what
+			city you're in and whether you're taking the Immersive User Experience (UX)
+		course or the Immersive Web Development course. </p>
+	</div>
+		<form name="myFrom" id="myFrom" action="success.html">
+
+			<p><label>City:</label> 
+
+				<select name= "city" >	<option>Hong Kong</option>
+					<option>London</option> 
+					<option>Los Angeles</option>
+					<option>New York</option> 
+					<option>Portland</option> 
+					<option>San Francisco </option>
+					<option>Seattle </option>
+					<option>Singapore </option>
+				</select>
+			</p>
+			<p><label>Course:</label>
+				<input type="radio" name="course" value="UX"> UX  <input type="radio" name="course" value="Webdev" checked> 
+				Web Dev
+			</p>
+			<p><label>Name: </label><input type="text" name="name"></p>
+			<p><label>Email: </label><input type="text" name="email"></p>
+			<p><label>Password: </label><input type="password" name="password"></p>
+		</p>
+		<p><input type="checkbox" name="consent" checked> Yes, subscribe me to the General Assembly student newsletter
+		</p>
+		<p><input type="submit" name="submit" value="Subscribe"></p>
+	</form>
+</body>
