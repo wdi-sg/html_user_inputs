@@ -1,4 +1,4 @@
-#IMPORTANT
+# IMPORTANT
 Please refer to https://github.com/jaanhio/html_inputs.
 
 # HTML User Inputs
