@@ -1,2 +1,60 @@
-<h1>Success!</h1>
-<p>You're all signed up.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <img src="general_assembly_logo.png" alt="logo"> <br>
+  <h1>General Assembly Account Creation</h1>
+  <p>Welcome to the General Assembly. General Assembly is a global
+  institution training people all over the world in today's top
+  technologies.</p>
+  <p>Please fill out the information below to create your General Assembly account. Let us know what city you're in and what course
+  you're taking. This list is for all students. Please tell us what city you're in and whether you're taking the Immersive User Experience (UX) course or the Immersive Web Development course.</p>
+
+  <form>
+    <p>
+      <label for="city">City:</label>
+      <select id="city" name="city">
+        <option value="Hong Kong">Hong Kong</option>
+        <option value="London">London</option>
+        <option value="Los Angeles">Los Angeles</option>
+        <option value="New York" selected>New York</option>
+        <option value="Portland">Portland</option>
+        <option value="San Francisco">San Francisco</option>
+        <option value="Seattle">Seattle</option>
+        <option value="Singapore" selected>Singapore</option>
+      </select>
+    </p>
+    <p>
+      <label for="course">Course:</label>
+        <input type="radio" id="course" value="UX" checked>
+        UX
+      </label>
+      <label>
+        <input type="radio" id="course" value="Web Dev">
+        Web Dev
+      </label>
+    </p>
+    <p>
+      <label for="name-field">Name:</label>
+      <input id="name-field" name="nameField" type="text" value="">
+    </p>
+    <p>
+      <label for="email-field">Email:</label>
+      <input id="email-field" name="emailField" type="text" value="">
+    </p>
+    <p>
+      <label for="password-field">Password:</label>
+      <input id="password-field" name="passwordField" type="text" value="">
+    </p>
+    <p>
+      <input type="checkbox" checked>Yes, subscribe me to the General Assembly student newsletter</input>
+    </p>
+    <p>
+      <input type="submit" value="Subscribe">
+    </p>
+  </form>
+</body>
+</html>
