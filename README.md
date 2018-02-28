@@ -1,3 +1,6 @@
+#IMPORTANT
+Please refer to https://github.com/jaanhio/html_inputs.
+
 # HTML User Inputs
 
 This exercise involves converting a given skeleton text file into a valid, interactive HTML page. The final webpage simulates a page where students create accounts for courses at General Assembly. Students select a city from a dropdown list, choose from one of two courses using a radio button, provide their name, their email, and a password, and have the option to uncheck an checkbox that automatically signs them up for a newsletter.
