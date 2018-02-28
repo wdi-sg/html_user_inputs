@@ -1,35 +1,56 @@
-general_assembly_logo.png
 
-General Assembly Account Creation
+<!DOCTYPE html>
+<html>
+<head>
+  <title>General Assembly Account Creation</title>
+</head>
+<body>
+  <img src="general_assembly_logo.png">
 
-Welcome to the General Assembly. General Assembly is a global
-institution training people all over the world in today's top
-technologies.
+  <h2>General Assembly Account Creation</h2>
 
-Please fill out the information below to create your General Assembly
-account. Let us know what city you're in and what course
-you're taking. This list is for all students. Please tell us what
-city you're in and whether you're taking the Immersive User Experience (UX)
-course or the Immersive Web Development course. 
+  <p>Welcome to the General Assembly. General Assembly is a global
+  institution training people all over the world in today's top
+  technologies.</p>
 
-City:
-  Hong Kong
-  London
-  Los Angeles
-  New York
-  Portland
-  San Francisco
-  Seattle
-  Singapore
+  <p>Please fill out the information below to create your General Assembly
+  account. Let us know what city you're in and what course
+  you're taking. This list is for all students. Please tell us what
+  city you're in and whether you're taking the Immersive User Experience (UX)
+  course or the Immersive Web Development course.</p>
 
-Course:
-  (0) UX
-  ( ) Web Dev
+  <form action="success.html">
+  City:
+      <select name="cities">
+        <option value="Hong Kong">Hong Kong</option>
+        <option value="London">London</option>
+        <option value="Los Angeles">Los Angeles</option>
+        <option value="New York">New York</option>
+        <option value="Portland">Portland</option>
+        <option value="San Francisco">San Francisco</option>
+        <option value="Seattle">Seattle</option>
+        <option value="Singapore">Singapore</option>
+      </select>
+  <br>
+  <br>
+  Course:
+    <input type="radio" id="UX">
+    <label for="UX">UX</label>
+    <input type="radio" id="Web Dev" checked>
+    <label for="Web Dev">Web Dev</label>
+  <br>
+  <br>
+    Name:<input type="text" name="name">
+    Email:<input type="text" name="email">
+    Password:<input type="Password" name="pw">
+  <br>
+  <br>
+    <input type="checkbox" name="suscribe_agree" checked="">
+    Yes, subscribe me to the General Assembly student newsletter
+  <br>
+  <br>
+    <input type="submit" value="Subscribe">
+  </form>
+</body>
+</html>
 
-Name:     _________
-Email:    _________
-Password: *********
-
-[] Yes, subscribe me to the General Assembly student newsletter
-
-[Subscribe]
