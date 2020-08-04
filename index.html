@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+    General Assembly Account Creation Page
+  </title>
+</head>
+
+<body>
+    <img src="general_assembly_logo.png" alt="ga_logo">
+    <h1>General Assembly Account Creation</h1>
+
+  <p>Welcome to the General Assembly. General Assembly is a global
+institution training people all over the world in today's top
+technologies.</p>
+
+
+  <p>Please fill out the information below to create your General Assembly
+account. Let us know what city you're in and what course
+you're taking. This list is for all students. Please tell us what
+city you're in and whether you're taking the Immersive User Experience (UX)
+course or the Immersive Web Development course. </p>
+
+<form action="success.html">
+
+  <label>City:</label>
+       <select id = "city">
+       <option value = "1">Hong Kong</option>
+       <option value = "2">London</option>
+       <option value = "3">Los Angeles</option>
+       <option value = "4">New York</option>
+       <option value = "5">Portland</option>
+       <option value = "6">Seattle</option>
+       <option value = "7">San Francisco</option>
+       <option value = "8">Singapore</option>
+     </select>
+<br><br>
+    <label>Course:</label>
+  <label>
+    <input type="radio" name="course" value="UX">
+    UX
+  </label>
+  <label>
+    <input type="radio" name="course" value="web_dev" checked>
+    Web Dev
+  </label>
+  <br><br>
+  <label>Name</label>
+  <input type="Text" name="name_field">
+  <br><br>
+<label>Email</label>
+  <input type="Email" name="email_field">
+  <br><br>
+<label>Password</label>
+  <input type="Password" name="password_field">
+  <br><br>
+    <label>
+    <input type="checkbox" name="subscribe" checked>
+     Yes, subscribe me to the General Assembly student newsletter
+  </label>
+  <br><br>
+  <input type="submit" name="subscribe_button" value="Subscribe">
+
+
+</form>
+
+</body>
+
+</html>
