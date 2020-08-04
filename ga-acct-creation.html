@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>General Assembly  Account Creation</title>
+    <style>
+        div {
+            padding: 0px 0px 10px 0px;
+        }
+    </style>
+</head>
+<body>
+    <img src="general_assembly_logo.png" alt="General Assembly Logo">
+    <h1>General Assembly Account Creation</h1>
+
+    <p>Welcome to the General Assembly. General Assembly is a global
+    institution training people all over the world in today's top
+    technologies.
+    <br>
+    <p>Please fill out the information below to create your General Assembly
+    account. Let us know what city you're in and what course
+    you're taking. This list is for all students. Please tell us what
+    city you're in and whether you're taking the Immersive User Experience (UX)
+    course or the Immersive Web Development course.</p>
+    </div>
+
+    <form action="success.html" method="GET">
+        <div>
+            <label for="city">City: </label>
+            <select name="city" id="city">City:
+            <option value="hongKong">Hong Kong</option>
+            <option value="london">London</option>
+            <option value="losAngeles">Los Angeles</option>
+            <option value="newYork">New York</option>
+            <option value="portland">Portland</option>
+            <option value="sanFrancisco">San Francisco</option>
+            <option value="seattle">Seattle</option>
+            <option value="singapore">Singapore</option>
+            </select>
+        </div>
+        <div>
+            <label for="course">Course: </label>
+            <label for="ux">UX</label>
+            <input type="radio" id="ux" name="course" value="ux">
+
+
+            <label for="ux">Web Dev</label>
+            <input type="radio" id="webdev" name="course" value="webdev">
+        </div>
+        <div>
+            <label for="name">Name: </label>
+            <input id="name" type="text" placeholder="John Smith">
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input id="email" type="email" required>
+        </div>
+        <div>
+            <label for="password">Password: </label>
+            <input id="password" type="password" required>
+        </div>
+        <div>
+            <input id="checkbox" type="checkbox">
+            <label for="checkbox">Yes, subscribe me to the General Assembly student newsletter</label>
+        </div>
+        <div>
+            <input type="submit" value="Subscribe">
+        </div>
+    </form>
+</body>
+</html>
