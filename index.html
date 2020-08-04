@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>General Assembly Account Creation</title>
+  <meta name="GA" content="General Assembly Account Creation">
+  <meta name="author" content="loribean">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+    <img src="./general_assembly_logo.png" alt="ga-logo">
+    <br/>
+    <br/>
+    <h1>General Assembly Account Creation</h1>
+    <p>Welcome to the General Assembly. General Assembly is a global
+institution training people all over the world in today's top
+technologies.</p>
+    <p>Please fill out the information below to create your General Assembly
+account. Let us know what city you're in and what course
+you're taking. This list is for all students. Please tell us what
+city you're in and whether you're taking the Immersive User Experience (UX)
+course or the Immersive Web Development course. </p>
+    <br/>
+    <form action="success.html" method="GET" >
+    <label for="cityField">City</label>
+    <select id="cities">
+      <option value="Los Angeles">Los Angeles</option>
+      <option value="New York">New York</option>
+      <option value="Portland">Portland</option>
+      <option value="San Francisco">San Francisco</option>
+      <option value="Seattle" selected>Seattle</option>
+      <option value="Singapore">Singapore</option>
+    </select>
+    <br/>
+    <br/>
+    <label for="courseField">Course</label>
+      <input id="ux" type="radio" name="answer" value="ux" required>
+      <label for="ux">UX</label>
+      <input id="web-dev" type="radio" name="answer" value="webdev" required>
+      <label for="web-dev">Web Dev</label>
+      <br/>
+      <br/>
+      <label for="name-field">Name</label>
+      <input id="name-field" name="nameField" type="text" value="">
+      <br/>
+      <br/>
+      <label for="email-field">Email</label>
+      <input id="email-field" name="emailField" type="text" value="">
+      <br/>
+      <br/>
+      <label for="password-field">Password</label>
+      <input id="password-field" name="pwField" type="Password" value="">
+      <br/>
+      <br/>
+      <input type="checkbox" id="sub" name="sub" value="">
+      <label for="sub"> Yes, subscribe me to the General Assembly student newsletter</label>
+      <br/>
+      <br/>
+      <input type="submit" name="submit-button" value="Subscribe">
+  </form>
+
+
+
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
